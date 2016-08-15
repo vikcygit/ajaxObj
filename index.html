@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+   <script src="ajaxObj.js"></script>
+
+  </head>
+  <body>
+
+    <div id="mainContainer">
+      <div id="myDiv"> The HTML will appear here</div>
+    </div>
+    <script type="text/javascript">
+      PostAjaxRequest(insert, 'fetchurl.php', 'u=www.pluginphp.com')
+
+      function insert(){
+        document.getElementById('myDiv').innerHTML = this
+      }
+
+
+    </script>
+  </body>
+</html>
